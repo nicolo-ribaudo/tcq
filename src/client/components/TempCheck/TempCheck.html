@@ -21,16 +21,6 @@
       </div>
     </span>
     <span class="reaction-container">
-      <p><strong>Following</strong></p>
-      <button title="Following" class="reaction-item button" @click="react('👀')">
-        👀 {{countReactions('👀')}}
-      </button>
-      <div class="floating hide" v-if="countReactions('👀') > 0">
-        <div class="arrow top right"></div>
-        <span>{{listNames('👀')}}</span>
-      </div>
-    </span>
-    <span class="reaction-container">
       <p><strong>Confused</strong></p>
       <button title="Confused" class="reaction-item button" @click="react('❓')">
         ❓ {{countReactions('❓')}}
