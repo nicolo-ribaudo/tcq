@@ -60,5 +60,15 @@
         <span>{{listNames('😕')}}</span>
       </div>
     </span>
+    <span class="reaction-container">
+      <p><strong>Negative</strong></p>
+      <button title="Negative" class="reaction-item button" @click="react('👎')">
+        👎 {{countReactions('👎')}}
+      </button>
+      <div class="floating hide" v-if="countReactions('👎') > 0">
+        <div class="arrow top right"></div>
+        <span>{{listNames('👎')}}</span>
+      </div>
+    </span>
   </div>
 </div>
